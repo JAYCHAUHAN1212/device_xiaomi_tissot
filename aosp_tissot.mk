@@ -18,18 +18,16 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from mido device
+# Inherit from AEX device
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
-# Inherit some common Arrow stuff.
-$(call inherit-product, vendor/bliss/config/common.mk)
+# Inherit some common AEX stuff.
+$(call inherit-product, vendor/bliss/common.mk)
 
-# PixelExperience stuff.
-TARGET_GAPPS_ARCH := arm64
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
-PRODUCT_NAME := bliss_tissot
+PRODUCT_NAME := aosp_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
