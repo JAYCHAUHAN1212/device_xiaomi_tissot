@@ -27,7 +27,7 @@ $(call inherit-product, vendor/superior/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
-PRODUCT_NAME := superio_tissot
+PRODUCT_NAME := superior_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
