@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from Tissot device
 $(call inherit-product, device/xiaomi/tissot/device.mk)
-
+TARGET_GAPPS_ARCH := arm64
 # Inherit some common Superior stuff.
 $(call inherit-product, vendor/superior/config/common.mk)
 
@@ -33,9 +33,8 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
-
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
+SUPERIOR_OFFICIAL=true
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="tissot-user 8.0.0 OPR1.170623.026 8.1.10 release-keys"
 
