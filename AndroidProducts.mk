@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_tissot.mk
+    $(LOCAL_DIR)/fi_tissot.mk
